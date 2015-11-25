@@ -39,7 +39,6 @@ public class MyOneSideInDepthRectangleDrawable extends Drawable {
     public void draw(Canvas canvas) {
         int height = getBounds().height();
         int width = getBounds().width();
-        RectF rect = new RectF(0.0f, 0.0f, width, height);
         Path p = new Path();
         p.moveTo(0.0f, 0.0f);
         p.lineTo(0.0f, height);
