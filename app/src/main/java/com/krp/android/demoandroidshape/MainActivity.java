@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.io.InputStream;
 
@@ -28,7 +29,19 @@ public class MainActivity extends AppCompatActivity {
         button.setBackground(new MyOneSideInDepthRectangleDrawable(bitmap));*/
 
 
-        button = (ImageView) findViewById(R.id.iv_cust);
+        button = (ImageView) findViewById(R.id.iv_inward_bent_rec);
         button.setBackground(new MyOneSideInDepthRectangleDrawable(Color.GRAY));
+
+
+        TextView v = (TextView) findViewById(R.id.iv_cust);
+        resource = getResources().openRawResource(R.raw.map);
+        bitmap = BitmapFactory.decodeStream(resource);
+        v.setBackground(new MyCustomDrawable(android.R.color.darker_gray));
+
+        v = (TextView) findViewById(R.id.iv_cust1);
+        resource = getResources().openRawResource(R.raw.map);
+        bitmap = BitmapFactory.decodeStream(resource);
+        v.setBackground(new MyCustomDrawable(android.R.color.darker_gray));
+
     }
 }

@@ -13,10 +13,36 @@
         android:contentDescription="TODO" />
 
     <ImageView
-        android:id="@+id/iv_cust"
+        android:id="@+id/iv_inward_bent_rec"
         android:layout_width="250dp"
-        android:layout_height="192dp"
+        android:layout_height="20dp"
         android:layout_margin="10dp"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/iv_cust"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="30dp"
+        android:text="Hi!! raj raj raj raj"
+        android:textColor="@android:color/white"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/iv_cust1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="30dp"
+        android:text="Hi!! raj\nHi!! raj"
+        android:textColor="@android:color/white"
         android:contentDescription="TODO" />
 
 </LinearLayout>
