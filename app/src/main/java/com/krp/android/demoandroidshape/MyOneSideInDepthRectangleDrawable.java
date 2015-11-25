@@ -8,6 +8,8 @@ import android.graphics.ColorFilter;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.PixelFormat;
+import android.graphics.PorterDuff;
+import android.graphics.PorterDuffColorFilter;
 import android.graphics.RectF;
 import android.graphics.Shader;
 import android.graphics.drawable.Drawable;
@@ -30,7 +32,7 @@ public class MyOneSideInDepthRectangleDrawable extends Drawable {
     public MyOneSideInDepthRectangleDrawable(int color) {
         paint = new Paint();
         paint.setAntiAlias(true);
-        paint.setColor(color);
+        paint.setColorFilter(new PorterDuffColorFilter(color, PorterDuff.Mode.SRC_ATOP));
     }
 
     @Override
