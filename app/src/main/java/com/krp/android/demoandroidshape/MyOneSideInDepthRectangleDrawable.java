@@ -3,6 +3,7 @@ package com.krp.android.demoandroidshape;
 import android.graphics.Bitmap;
 import android.graphics.BitmapShader;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.ColorFilter;
 import android.graphics.Paint;
 import android.graphics.Path;
@@ -25,6 +26,13 @@ public class MyOneSideInDepthRectangleDrawable extends Drawable {
         paint.setAntiAlias(true);
         paint.setShader(shader);
     }
+
+    public MyOneSideInDepthRectangleDrawable(int color) {
+        paint = new Paint();
+        paint.setAntiAlias(true);
+        paint.setColor(color);
+    }
+
     @Override
     public void draw(Canvas canvas) {
         int height = getBounds().height();
