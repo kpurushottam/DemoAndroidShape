@@ -1,16 +1,22 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity" >
 
     <ImageView
-        android:id="@+id/image"
+        android:id="@+id/iv_round_rec"
         android:layout_width="match_parent"
         android:layout_height="192dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
         android:contentDescription="TODO" />
 
-</RelativeLayout>
+    <ImageView
+        android:id="@+id/iv_cust"
+        android:layout_width="250dp"
+        android:layout_height="192dp"
+        android:layout_margin="10dp"
+        android:contentDescription="TODO" />
+
+</LinearLayout>
