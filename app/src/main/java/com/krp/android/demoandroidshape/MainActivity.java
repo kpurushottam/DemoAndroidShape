@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         v = (TextView) findViewById(R.id.iv_cust1);
         resource = getResources().openRawResource(R.raw.map);
         bitmap = BitmapFactory.decodeStream(resource);
-        v.setBackground(new MyCustomDrawable(android.R.color.darker_gray));
+        v.setBackground(new BezierCurveDrawable(this, android.R.color.holo_green_dark));
 
     }
 }

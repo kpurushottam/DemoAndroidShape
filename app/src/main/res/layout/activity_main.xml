@@ -34,14 +34,14 @@
 
     <TextView
         android:id="@+id/iv_cust1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:paddingTop="5dp"
         android:paddingBottom="5dp"
         android:paddingLeft="10dp"
         android:paddingRight="30dp"
-        android:text="Hi!! raj\nHi!! raj"
+        android:text="Hi!! raj Hi!! raj Hi!! raj\nHi!! rajHi!! raj\nHi!! rajHi!! raj\nHi!! rajHi!! raj\nHi!! raj"
         android:textColor="@android:color/white"
         android:contentDescription="TODO" />
 
